@@ -1,6 +1,6 @@
-# SQL-Stored-Procedure
+# SQL Stored Procedure
 
-This action executes SQL stored procedures from NeoLoad during a Load Test. It enables you to perform administrative tasks like cleaning a database after a test. It also allows you to get business-related metrics that you can monitor, for example the number of items in a work queue or the number of checkouts during the last minute.
+This advanced action executes SQL stored procedures from NeoLoad during a Load Test. It enables you to perform administrative tasks like cleaning a database after a test. It also allows you to get business-related metrics that you can monitor, for example the number of items in a work queue or the number of checkouts during the last minute.
 
 | Property           | Value             |
 | ----------------   | ----------------   |
