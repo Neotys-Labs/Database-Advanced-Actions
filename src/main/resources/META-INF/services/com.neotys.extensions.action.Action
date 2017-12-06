@@ -1,0 +1,4 @@
+com.neotys.action.sp.SPExecuteAction
+com.neotys.action.sp.SqlConnectAction
+com.neotys.action.sp.SPDisconnectAction
+com.neotys.action.sp.PLSQLExecuteAction
