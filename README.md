@@ -1,6 +1,6 @@
 # Database Advanced Actions for Oracle Database
 
-This repository contains NeoLoad Advanced Actions that allows performance testers using NeoLoad to perform complex database-related administrative tasks during a load test. Typicall at the begining of the test to prepare the Database before the test, or at the end for a clean-up.
+This repository contains NeoLoad Advanced Actions that allows performance testers using NeoLoad to perform complex database-related administrative tasks during a load test. Typicall at the begining of the test to prepare the Database, or at the end for a clean-up.
 
 ## SQL Stored Procedure
 
@@ -35,7 +35,7 @@ The 'PLSQL Execute' Advanced Action executes any PL/SQL file.
 | parameter values         | A comma separated string of IN, OUT & INOUT parameter value(s). For OUT need to pass ‘?’ as value. Ex: " Martin,1234,?,ab34g" |
 
 Status Codes:
-* NL-SP_ERROR :  Any error while calling the stored procedure or I/O. 
+* NL-SP_ERROR :  Any error while calling the stored procedure or I/O error. 
 
 ## PL/SQL - Parameters
 
@@ -46,7 +46,7 @@ Status Codes:
 | contentFile_parse      | Whether to parse the file to replace variables.  Possible values are Y/N. Default value= N.|
 
 Status Codes:
-* NL-PLSQL_ERROR :  Any PL/SQL error or I/O.
+* NL-PLSQL_ERROR :  Any PL/SQL error or I/O error.
 
 ### PLSQL File formatting guidelines
 
