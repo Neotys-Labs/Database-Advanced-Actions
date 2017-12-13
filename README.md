@@ -65,5 +65,7 @@ Inside  each sql statement should end with ;+
 End of each block should end with ;#  ( Ex:-     END;#)
 
 #### Rule2
+The file should be encoded with the default charset of the platform.
+
 Better not  to use notepad++ for formatting PLSQL file. Use notepad & while saving  select “save type=all files (*.*)”   and Encoding=ANSI.
 
