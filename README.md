@@ -1,6 +1,6 @@
 # Database Advanced Actions for Oracle Database
 
-This repository contains NeoLoad Advanced Actions that allows performance testers using NeoLoad to perform complex database-related administrative tasks during a load test. Typicall at the begining of the test to prepare the Database, or at the end for a clean-up.
+This repository contains NeoLoad Advanced Actions that allows performance testers using NeoLoad to perform complex database-related administrative tasks during a load test. Typicall at the begining of the test to prepare the database, or at the end for a clean-up.
 
 ## SQL Stored Procedure
 
@@ -8,7 +8,7 @@ The 'SP Execute' Advanced Action executes SQL stored procedures from NeoLoad.
 
 ## PL/SQL 
 
-The 'PLSQL Execute' Advanced Action executes any PL/SQL file.
+The 'PLSQL Execute' Advanced Action executes any PL/SQL file from NeoLoad.
 
 | Property           | Value             |
 | ----------------   | ----------------  |
