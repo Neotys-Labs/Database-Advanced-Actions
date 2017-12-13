@@ -13,6 +13,7 @@ The 'PLSQL Execute' Advanced Action executes any PL/SQL file from NeoLoad.
 | Property           | Value             |
 | ----------------   | ----------------  |
 | Maturity           | Experimental      |
+| Support            | Not supported by Neotys      |
 | Author             | Neotys Professional Services |
 | License            | [BSD Simplified](https://www.neotys.com/documents/legal/bsd-neotys.txt) |
 | NeoLoad            | 5.2 (Enterprise or Professional Edition w/ Integration & Advanced Usage and NeoLoad Web option required)|
