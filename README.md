@@ -26,11 +26,19 @@ The 'PLSQL Execute' Advanced Action executes any PL/SQL file from NeoLoad.
 1. Download the [latest release](https://github.com/Neotys-Labs/Database-Advanced-Actions/releases/latest)
 1. Read the NeoLoad documentation to see [How to install a custom Advanced Action](https://www.neotys.com/documents/doc/neoload/latest/en/html/#25928.htm)
 
+## Usage
+
+'Database/SP Execute' and 'Database/PLSQL Execute' actions requires:
+1. A 'Database/SQL Connection' action is executed before the action to establish the connection to the database.
+2. A 'Database/SQL Disconnection' action is executed after the action to close the connection.
+
+A good practice is to put 'SQL Connection' in the 'Init' container of the Virtual User Path and the 'SQL Disconnection' in the 'End' container. It ensures that the connection is estably once per Virtual User.
+
 ## SQL Stored Procedure - Parameters
 
 | Name                     | Description       |
 | ---------------          | ----------------- |
-| connectionName           | the name of the connection as specified in the 'SQL Connect' action |
+| connectionName           | the name of the connection as specified in the 'SQL Connection' action |
 | StoredProc Name          | name of the stored procedure to execute |
 | parameter Signature      | datatype and 'IN', 'OUT' or 'INOUT', comma separated. Ex: "VARCHAR-IN, INT-INOUT, NUMERIC-OUT, VARCHAR-IN" |
 | parameter values         | A comma separated string of IN, OUT & INOUT parameter value(s). For OUT need to pass ‘?’ as value. Ex: " Martin,1234,?,ab34g" |
@@ -42,7 +50,7 @@ Status Codes:
 
 | Name                     | Description       |
 | ---------------          | ----------------- |
-| connectionName           | the name of the connection as specified in the 'SQL Connect' action |
+| connectionName           | the name of the connection as specified in the 'SQL Connection' action |
 | PLSQL file name          | PLSQL filename. Absolute path or relative to <project>/custom-resources/ (when stored in this folder, the files is automatically transeferred to all Load Generators). This file must be formatted as per the rule mentioned below.|
 | contentFile_parse      | Whether to parse the file to replace variables.  Possible values are Y/N. Default value= N.|
 
