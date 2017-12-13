@@ -59,7 +59,3 @@ End of each block should end with ;#  ( Ex:-     END;#)
 #### Rule2
 Better not  to use notepad++ for formatting PLSQL file. Use notepad & while saving  select “save type=all files (*.*)”   and Encoding=ANSI.
 
-
-## Status Codes
-
-* NL-SP-ERROR: PLSQL or I/O error
