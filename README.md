@@ -1,6 +1,6 @@
 # Database Advanced Actions for Oracle Database
 
-This repository contains NeoLoad Advanced Actions that allows performance testers using NeoLoad to perform complex database-related administrative tasks during a load test. Typicall at the begining of the test to prepare the database, or at the end for a clean-up.
+This repository contains NeoLoad Advanced Actions that allows performance testers using NeoLoad to perform complex database-related administrative tasks during a load test. Typically at the begining of the test to prepare the database, at the end for a clean-up or during the test to trigger some backend procedures in parallel to the load test of the front end.
 
 ## SQL Stored Procedure
 
