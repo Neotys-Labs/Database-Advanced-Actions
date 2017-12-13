@@ -218,7 +218,7 @@ public final class SPExecuteActionEngineforgenericsp implements ActionEngine {
 		 
 		                        
 
-		appendLineToStringBuilder(responseBuilder, "Store proc execution result start:"+ spresult+ ": End");
+		appendLineToStringBuilder(responseBuilder, "Store proc execution result start:"+ spresult+ "\n SP Execution completed successfully: End");
 		} 
 		catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -233,7 +233,7 @@ public final class SPExecuteActionEngineforgenericsp implements ActionEngine {
 			
 		//remove connection object added by vijesh
 		//context.getCurrentVirtualUser().remove("myConnection");
-		appendLineToStringBuilder(requestBuilder, "SqlConnectAction request.");
+		appendLineToStringBuilder(requestBuilder, "SPExecuteAction request.");
 	
 		// TODO perform execution.
 
